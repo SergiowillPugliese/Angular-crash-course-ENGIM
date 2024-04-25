@@ -11,7 +11,13 @@ export class User {
         cap: 0,
     };
 
-    constructor(init: any) {
-        Object.assign(this, init);
+    constructor(init: User) {
+        this.id = init.id;
+        this.ruolo = init.ruolo;
+        this.nome = init.nome;
+        this.cognome = init.cognome;
+        this.email = init.email;
+        this.telefono = init.telefono;
+        this.indirizzo = init.indirizzo;
     }
 }

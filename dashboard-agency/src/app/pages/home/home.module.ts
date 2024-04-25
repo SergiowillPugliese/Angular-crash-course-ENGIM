@@ -6,6 +6,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Homecomponent } from './home.component';
+import { CardsContainerComponent } from './dashboard/cards-container/cards-container.component';
+import { CardComponent } from './dashboard/cards-container/card/card.component';
 
 const router: Routes = [
   { path: '', component: Homecomponent },
@@ -18,7 +20,9 @@ const router: Routes = [
   declarations: [
     AgentDeskComponent,
     DashboardComponent,
-    Homecomponent
+    Homecomponent,
+    CardsContainerComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +36,4 @@ const router: Routes = [
     Homecomponent
   ]
 })
-export class HomeModule {
-
-
-}
+export class HomeModule { }
