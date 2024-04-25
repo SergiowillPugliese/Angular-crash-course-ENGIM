@@ -1,0 +1,516 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "ruolo": "Amministratore",
+      "username": "admin",
+      "password": "admin",
+      "nome": "Mario",
+      "cognome": "Rossi",
+      "email": "",
+      "telefono": "",
+      "indirizzo": {
+        "via": "",
+        "citta": "",
+        "cap": ""
+      }
+    },
+    {
+      "id": "2",
+      "ruolo": "Utente",
+      "username": "agente",
+      "password": "agente",
+      "nome": "Luca",
+      "cognome": "Bianchi",
+      "email": "",
+      "telefono": "",
+      "indirizzo": {
+        "via": "",
+        "citta": "",
+        "cap": ""
+      }
+    },
+    {
+      "id": "3498",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "7061",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "ee75",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "d612",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "cdb3",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "6dc6",
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+  "immobili": [
+    {
+      "id": "1",
+      "tipo": "appartamento",
+      "categoria": "vendita",
+      "prezzo": 350000,
+      "location": {
+        "indirizzo": "Via Roma 10",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 1,
+        "area": 80,
+        "balcone": 0,
+        "garage": false,
+        "ascensore": true,
+        "classeEnergetica": "A",
+        "annoCostruzione": 2010,
+        "riscaldamento": "autonomo",
+        "condizionatore": true,
+        "arredato": false,
+        "ristrutturato": true,
+        "cucina": "abitabile",
+        "piano": 3,
+        "numPiani": 5,
+        "numLocali": 3
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "2",
+      "tipo": "appartamento",
+      "categoria": "affitto",
+      "prezzo": 800,
+      "location": {
+        "indirizzo": "Via Milano 20",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 1,
+        "area": 60,
+        "balcone": 1,
+        "garage": false,
+        "ascensore": true,
+        "classeEnergetica": "B",
+        "annoCostruzione": 2000,
+        "riscaldamento": "centralizzato",
+        "condizionatore": false,
+        "arredato": true,
+        "ristrutturato": false,
+        "cucina": "angolo cottura",
+        "piano": 1,
+        "numPiani": 3,
+        "numLocali": 2
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "3",
+      "tipo": "villa",
+      "categoria": "vendita",
+      "prezzo": 500000,
+      "location": {
+        "indirizzo": "Via Napoli 30",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 2,
+        "area": 200,
+        "balcone": 0,
+        "garage": true,
+        "ascensore": false,
+        "classeEnergetica": "A",
+        "annoCostruzione": 2015,
+        "riscaldamento": "autonomo",
+        "condizionatore": true,
+        "arredato": false,
+        "ristrutturato": true,
+        "cucina": "abitabile",
+        "piano": 1,
+        "numPiani": 2,
+        "numLocali": 5
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "4",
+      "tipo": "villa",
+      "categoria": "affitto",
+      "prezzo": 1500,
+      "location": {
+        "indirizzo": "Via Firenze 40",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 3,
+        "area": 300,
+        "balcone": 1,
+        "garage": true,
+        "ascensore": false,
+        "classeEnergetica": "B",
+        "annoCostruzione": 2010,
+        "riscaldamento": "centralizzato",
+        "condizionatore": false,
+        "arredato": true,
+        "ristrutturato": false,
+        "cucina": "abitabile",
+        "piano": 1,
+        "numPiani": 2,
+        "numLocali": 7
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "5",
+      "tipo": "appartamento",
+      "categoria": "vendita",
+      "prezzo": 200000,
+      "location": {
+        "indirizzo": "Via Venezia 50",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 1,
+        "area": 70,
+        "balcone": 1,
+        "garage": false,
+        "ascensore": true,
+        "classeEnergetica": "A",
+        "annoCostruzione": 2005,
+        "riscaldamento": "autonomo",
+        "condizionatore": true,
+        "arredato": false,
+        "ristrutturato": true,
+        "cucina": "abitabile",
+        "piano": 2,
+        "numPiani": 4,
+        "numLocali": 3
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "6",
+      "tipo": "appartamento",
+      "categoria": "affitto",
+      "prezzo": 1000,
+      "location": {
+        "indirizzo": "Via Genova 60",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 1,
+        "area": 50,
+        "balcone": 0,
+        "garage": false,
+        "ascensore": true,
+        "classeEnergetica": "B",
+        "annoCostruzione": 2000,
+        "riscaldamento": "centralizzato",
+        "condizionatore": false,
+        "arredato": true,
+        "ristrutturato": false,
+        "cucina": "angolo cottura",
+        "piano": 1,
+        "numPiani": 3,
+        "numLocali": 2
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "7",
+      "tipo": "villa",
+      "categoria": "vendita",
+      "prezzo": 700000,
+      "location": {
+        "indirizzo": "Via Palermo 70",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 3,
+        "area": 250,
+        "balcone": 0,
+        "garage": true,
+        "ascensore": false,
+        "classeEnergetica": "A",
+        "annoCostruzione": 2010,
+        "riscaldamento": "autonomo",
+        "condizionatore": true,
+        "arredato": false,
+        "ristrutturato": true,
+        "cucina": "abitabile",
+        "piano": 1,
+        "numPiani": 2,
+        "numLocali": 6
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "8",
+      "tipo": "villa",
+      "categoria": "affitto",
+      "prezzo": 2000,
+      "location": {
+        "indirizzo": "Via Bologna 80",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 4,
+        "area": 400,
+        "balcone": 1,
+        "garage": true,
+        "ascensore": false,
+        "classeEnergetica": "B",
+        "annoCostruzione": 2015,
+        "riscaldamento": "centralizzato",
+        "condizionatore": false,
+        "arredato": true,
+        "ristrutturato": false,
+        "cucina": "abitabile",
+        "piano": 1,
+        "numPiani": 2,
+        "numLocali": 8
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "9",
+      "tipo": "appartamento",
+      "categoria": "vendita",
+      "prezzo": 250000,
+      "location": {
+        "indirizzo": "Via Palermo 90",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 2,
+        "area": 90,
+        "balcone": 1,
+        "garage": false,
+        "ascensore": true,
+        "classeEnergetica": "A",
+        "annoCostruzione": 2005,
+        "riscaldamento": "autonomo",
+        "condizionatore": true,
+        "arredato": false,
+        "ristrutturato": true,
+        "cucina": "abitabile",
+        "piano": 2,
+        "numPiani": 4,
+        "numLocali": 4
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    },
+    {
+      "id": "10",
+      "tipo": "appartamento",
+      "categoria": "affitto",
+      "prezzo": 1200,
+      "location": {
+        "indirizzo": "Via Bari 100",
+        "citta": "Torino",
+        "cap": "10100"
+      },
+      "caratteristiche": {
+        "bagno": 2,
+        "area": 70,
+        "balcone": 0,
+        "garage": false,
+        "ascensore": true,
+        "classeEnergetica": "B",
+        "annoCostruzione": 2000,
+        "riscaldamento": "centralizzato",
+        "condizionatore": false,
+        "arredato": true,
+        "ristrutturato": false,
+        "cucina": "angolo cottura",
+        "piano": 1,
+        "numPiani": 3,
+        "numLocali": 3
+      },
+      "stato": {
+        "dataVendita": null,
+        "dataAffitto": null,
+        "affittato": false,
+        "venduto": false,
+        "trattativaInCorso": false,
+        "scadenzaContrattoAffitto": null,
+        "primaAllerta": false,
+        "ultimaAllerta": false
+      },
+      "datiInquilinoAttuale": {
+        "nome": null,
+        "cognome": null,
+        "dataInizioAffitto": null,
+        "dataFineAffitto": null,
+        "costoAffitto": null
+      }
+    }
+  ]
+}
