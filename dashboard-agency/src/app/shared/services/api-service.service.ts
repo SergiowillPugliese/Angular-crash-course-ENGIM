@@ -19,7 +19,6 @@ export class ApiService {
       .set('Pragma', 'no-cache')
       .set('Expires', 'Thu, 01 Jan 1970 00:00:00 GMT')
       .set('If-Modified-Since', '0')
-      .set('cors', 'no-cors')
     return headers;
   }
 

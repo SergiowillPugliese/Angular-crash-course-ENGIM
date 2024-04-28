@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ImmobiliVM } from 'src/app/shared/model/immobili.model';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  @Input() immobile!: ImmobiliVM;
 
 }

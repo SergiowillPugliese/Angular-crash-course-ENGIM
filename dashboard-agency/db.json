@@ -31,6 +31,83 @@
       }
     }
   ],
+  "clienti": [
+    {
+      "id": 1,
+      "nome": "Marco",
+      "cognome": "Bianchi",
+      "dataNascita": "1985-05-15",
+      "luogoNascita": "Milano",
+      "codiceFiscale": "MRCBNC85E15F205Z",
+      "indirizzo": "Via Roma 10",
+      "citta": "Milano",
+      "cap": "20121",
+      "telefono": "3331234567",
+      "email": "marco.bianchi@example.com",
+      "professione": "Ingegnere",
+      "reddito": 42000
+    },
+    {
+      "id": 2,
+      "nome": "Giulia",
+      "cognome": "Rossi",
+      "dataNascita": "1990-02-20",
+      "luogoNascita": "Roma",
+      "codiceFiscale": "GLARSS90B50H501T",
+      "indirizzo": "Piazza Navona 1",
+      "citta": "Roma",
+      "cap": "00186",
+      "telefono": "3479876543",
+      "email": "giulia.rossi@example.com",
+      "professione": "Avvocato",
+      "reddito": 50000
+    },
+    {
+      "id": 3,
+      "nome": "Luca",
+      "cognome": "Verdi",
+      "dataNascita": "1979-08-11",
+      "luogoNascita": "Napoli",
+      "codiceFiscale": "LCVRDI79M11F839J",
+      "indirizzo": "Via Toledo 22",
+      "citta": "Napoli",
+      "cap": "80132",
+      "telefono": "3205678910",
+      "email": "luca.verdi@example.com",
+      "professione": "Medico",
+      "reddito": 55000
+    },
+    {
+      "id": 4,
+      "nome": "Sara",
+      "cognome": "Ferrari",
+      "dataNascita": "1992-12-30",
+      "luogoNascita": "Palermo",
+      "codiceFiscale": "SRRFRR92T70G273X",
+      "indirizzo": "Corso Vittorio Emanuele 91",
+      "citta": "Palermo",
+      "cap": "90133",
+      "telefono": "3337654321",
+      "email": "sara.ferrari@example.com",
+      "professione": "Architetto",
+      "reddito": 47000
+    },
+    {
+      "id": 5,
+      "nome": "Alessandro",
+      "cognome": "Galli",
+      "dataNascita": "1982-03-17",
+      "luogoNascita": "Genova",
+      "codiceFiscale": "LSNDRG82C17D969H",
+      "indirizzo": "Via San Lorenzo 15",
+      "citta": "Genova",
+      "cap": "16123",
+      "telefono": "3399876543",
+      "email": "alessandro.galli@example.com",
+      "professione": "Grafico",
+      "reddito": 39000
+    }
+  ],
   "immobili": [
     {
       "id": "1",

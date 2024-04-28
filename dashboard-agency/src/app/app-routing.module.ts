@@ -1,10 +1,12 @@
 import { NgModule, inject } from '@angular/core';
 import { ActivatedRouteSnapshot, Router, RouterModule, RouterStateSnapshot, Routes } from '@angular/router';
+import { StorageService } from './shared/services/storage.service';
 
 const authGuard = async (route: ActivatedRouteSnapshot, routSnap: RouterStateSnapshot) => {
   console.log(route, routSnap);
   const router = inject(Router);
-  const currentUser = localStorage.getItem('currentUser');
+  const storageService = inject(StorageService);
+  const currentUser = storageService.getItem('currentUser');
   if (currentUser) {
     return true;
   } else {
