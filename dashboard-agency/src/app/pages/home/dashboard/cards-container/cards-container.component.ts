@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, lastValueFrom } from 'rxjs';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Observable, Subscription, lastValueFrom } from 'rxjs';
 import { ImmobiliDTO } from 'src/app/shared/model/immobili.model';
 import { ImmobiliService } from 'src/app/shared/services/immobili.service';
 
@@ -10,11 +10,10 @@ import { ImmobiliService } from 'src/app/shared/services/immobili.service';
 })
 export class CardsContainerComponent implements OnInit {
 
-  //creare poi una variabile e una funzione get per prendere gli immobiliVM
-
   immobili!: ImmobiliDTO[];
   immobili$!: Observable<ImmobiliDTO[]>;
-
+  @Output() selectedImmobileFromCard = new EventEmitter<ImmobiliDTO>();
+  @Input() selectedId!: number;
 
   constructor(private immobiliService: ImmobiliService) { }
 
@@ -24,7 +23,7 @@ export class CardsContainerComponent implements OnInit {
     //   this.immobili = data;
     // });
 
-    // this.immobili$ = this.immobiliService.getImmobili();
+    this.immobili$ = this.immobiliService.getImmobili();
 
     this.onGetImmobili();
 
@@ -36,8 +35,12 @@ export class CardsContainerComponent implements OnInit {
     } catch (error) {
       console.log(error);
     } finally {
-      console.log(this.immobili);
+      //console.log(this.immobili);
     }
+  }
+
+  onSelect(immobile: ImmobiliDTO) {
+    this.selectedImmobileFromCard.emit(immobile);
   }
 
 }

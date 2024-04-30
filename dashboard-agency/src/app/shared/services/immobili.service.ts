@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from './api-service.service';
 import { ImmobiliDTO } from '../model/immobili.model';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,6 +9,15 @@ import { ImmobiliDTO } from '../model/immobili.model';
 export class ImmobiliService {
 
   endpoint = '/immobili';
+  private selectedImmobile: BehaviorSubject<ImmobiliDTO | null> = new BehaviorSubject<ImmobiliDTO | null>(null);
+
+  get selectedImmobile$() {
+    return this.selectedImmobile.asObservable();
+  }
+
+  setSelectedImmobile(immobile: ImmobiliDTO) {
+    this.selectedImmobile.next(immobile);
+  }
 
   constructor(private apiService: ApiService) { }
 

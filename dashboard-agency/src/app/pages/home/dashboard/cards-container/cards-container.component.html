@@ -1,1 +1,3 @@
-<app-card></app-card>
+<ng-container *ngFor="let item of immobili$ | async">
+    <app-card [selectedId]="selectedId" [immobile]="item" (selectedImmobile)="onSelect($event)"></app-card>
+</ng-container>

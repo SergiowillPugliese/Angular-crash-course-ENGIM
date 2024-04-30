@@ -1,15 +1,13 @@
-<!-- 
-    fare le card con gli immobili mettendoci anche degli accordion. Vediamo che cosa esce fuori
- -->
-
-<div class="card flex justify-content-center">
-    <p-card header="Title">
-        <h6></h6>
-        <p class="m-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-            numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
-            cupiditate neque
-            quas!
-        </p>
+<div [ngClass]="{
+      'bg-primary': isSelected,
+      'bg-white': !isSelected
+    }"
+    class="border rounded-lg bg-white p-4 my-4 shadow-lg hover:shadow-xl transition-shadow duration-700 cursor-pointer"
+    (click)="onSelectedItem()">
+    <p-card [header]="'Id: ' + immobile.id + ' - Tipo: ' + immobile.categoria" class="bg-white">
+        <ng-template pTemplate="content">
+            <p class="text-gray-600 mt-2">Categoria: {{ immobile.categoria }}</p>
+            <p class="text-gray-600">Prezzo: {{ immobile.prezzo | currency:'EUR' }}</p>
+        </ng-template>
     </p-card>
 </div>
