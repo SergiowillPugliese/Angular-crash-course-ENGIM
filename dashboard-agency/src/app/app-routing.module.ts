@@ -1,25 +1,8 @@
 import { NgModule, inject } from '@angular/core';
-import { ActivatedRouteSnapshot, Router, RouterModule, RouterStateSnapshot, Routes } from '@angular/router';
-import { StorageService } from './shared/services/storage.service';
+import { RouterModule, Routes } from '@angular/router';
 
-const authGuard = async (route: ActivatedRouteSnapshot, routSnap: RouterStateSnapshot) => {
-  console.log(route, routSnap);
-  const router = inject(Router);
-  const storageService = inject(StorageService);
-  const currentUser = storageService.getItem('currentUser');
-  if (currentUser) {
-    return true;
-  } else {
-    router.navigate(['/login']);
-    return false;
-  }
-}
 
-const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', loadComponent: () => import('./pages/login/login.component').then(component => component.LoginComponent) },
-  { path: 'home', canActivate: [authGuard], loadChildren: () => import('./pages/home/home.module').then(module => module.HomeModule) }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
