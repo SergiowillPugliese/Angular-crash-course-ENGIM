@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from './shared/service/http.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'dashboard-agency';
 
-  constructor() { }
+  constructor(private httpServ: HttpService) { }
 
   ngOnInit() {
+    //this.httpServ.getElements().subscribe((res) => console.log(res));
   }
 }
